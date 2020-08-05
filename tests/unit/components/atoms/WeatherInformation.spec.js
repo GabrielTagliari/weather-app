@@ -24,10 +24,10 @@ describe('WeatherInformation.vue', () => {
   })
 
   it('displays label', () => {
-    expect(wrapper.find("h1").text()).toBe("1,007mBar")
+    expect(wrapper.find("h3").text()).toBe("1,007mBar")
   })
 
   it('displays text', () => {
-    expect(wrapper.find("p").text()).toBe("Pressure")
+    expect(wrapper.find("h6").text()).toBe("Pressure")
   })
 })
