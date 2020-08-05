@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img alt="Vue logo" :src="require('../../assets/' + icon)">
+    <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" width="50px">
+    <h1>{{ label }}</h1>
+    <p>{{ text }}</p>
   </div>
 </template>
 
@@ -8,16 +10,18 @@
 export default {
   name: 'WeatherInformation',
   props: {
-    icon: String
-  },
-  // data () {
-  //   return {
-  //     icon: require('../../assets/logo.png')
-  //   }
-  // }
+    icon: String,
+    label: String,
+    text: String
+  }
 }
 </script>
 
-<style>
-
+<style scoped>
+h1 {
+  margin-bottom: 0;
+}
+p {
+  margin-top: 5px;
+}
 </style>
