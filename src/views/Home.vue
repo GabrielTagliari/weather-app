@@ -7,18 +7,21 @@
     <weather-information icon="sunrise.svg" label="6:03 AM" text="Sunrise"/>
     <weather-information icon="sunset.svg" label="7:05 PM" text="Sunset"/>
     <weather-information icon="sand-clock.svg" label="13h 1m" text="Daytime"/>
+    <current-temperature temperature="36"/>
   </div>
 </template>
 
 <script>
 import WeatherInformation from '@/components/atoms/WeatherInformation'
 import TemperatureRange from '@/components/atoms/TemperatureRange'
+import CurrentTemperature from '@/components/atoms/CurrentTemperature'
 
 export default {
   name: 'Home',
   components: {
     WeatherInformation,
-    TemperatureRange
+    TemperatureRange,
+    CurrentTemperature
   }
 }
 </script>
