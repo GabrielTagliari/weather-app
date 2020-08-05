@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div>{{ maxTemperature }}
-    <img alt="max" :src="require('../../assets/' + arrowUp)" width="50px" />
+    <div class="temperature">
+      <h1>{{ maxTemperature }}</h1>
+      <img class="max" alt="max" src="../../assets/arrow_up.svg" width="50px" />
     </div>
-    <div>{{ minTemperature }}
-    <img alt="min" :src="require('../../assets/' + arrowDown)" width="50px" />
+    <div class="temperature">
+      <h1>{{ minTemperature }}</h1>
+      <img class="min" alt="min" src="../../assets/arrow_down.svg" width="50px" />
     </div>
   </div>
 </template>
@@ -13,17 +15,29 @@
 export default {
   name: "TemperatureRange",
   props: {
-    arrowUp: String,
     maxTemperature: String,
-    minTemperature: String,
-    arrowDown: String,
+    minTemperature: String
   },
 };
 </script>
 
 <style scoped>
 img {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+}
+h1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.temperature {
+  display: flex;
+  align-items: center;
+}
+.max {
+  padding-top: 0px;
+}
+.min {
+  padding-bottom: 0px;
 }
 </style>
