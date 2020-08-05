@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import WeatherInformation from '../components/atoms/WeatherInformation'
+import WeatherInformation from '@/components/atoms/WeatherInformation'
 
 export default {
   name: 'Home',
