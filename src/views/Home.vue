@@ -27,7 +27,7 @@
 
 <script>
 import WeatherInformation from "@/components/molecules/WeatherInformation";
-import TemperatureRange from "@/components/atoms/TemperatureRange";
+import TemperatureRange from "@/components/molecules/TemperatureRange";
 import CurrentTemperature from "@/components/atoms/CurrentTemperature";
 import WeatherDailyInformation from "@/components/atoms/WeatherDailyInformation";
 
