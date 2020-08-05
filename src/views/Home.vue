@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <weather-information icon="barometer.svg" label="1,007mBar" text="Pressure"/>
+    <temperature-range arrowUp="arrow_up.svg" maxTemperature="35°C" minTemperature="14°C" arrowDown="arrow_down.svg"/>
   </div>
 </template>
 
 <script>
 import WeatherInformation from '@/components/atoms/WeatherInformation'
+import TemperatureRange from '@/components/atoms/TemperatureRange'
 
 export default {
   name: 'Home',
   components: {
-    WeatherInformation
+    WeatherInformation,
+    TemperatureRange
   }
 }
 </script>
