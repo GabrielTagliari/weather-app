@@ -1,8 +1,8 @@
 <template>
   <div class="flex">
-    <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" width="50px">
-    <h1>{{ label }}</h1>
-    <p>{{ text }}</p>
+    <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" max-width="25px">
+    <h3>{{ label }}</h3>
+    <h6>{{ text }}</h6>
   </div>
 </template>
 
@@ -23,11 +23,12 @@ export default {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  width: 8em;
 }
-h1 {
+h3 {
   margin-bottom: 0;
 }
-p {
+h6 {
   margin-top: 5px;
 }
 </style>
