@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <weather-information icon="barometer.svg" label="1,007mBar" text="Pressure"/>
     <temperature-range arrowUp="arrow_up.svg" maxTemperature="35°C" minTemperature="14°C" arrowDown="arrow_down.svg"/>
+    <weather-information icon="humidity.svg" label="49%" text="Humidity"/>
+    <weather-information icon="barometer.svg" label="1,007mBar" text="Pressure"/>
+    <weather-information icon="wind-1.svg" label="23km/h" text="Wind"/>
+    <weather-information icon="sunrise.svg" label="6:03 AM" text="Sunrise"/>
+    <weather-information icon="sunset.svg" label="7:05 PM" text="Sunset"/>
+    <weather-information icon="sand-clock.svg" label="13h 1m" text="Daytime"/>
   </div>
 </template>
 
@@ -29,5 +34,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 </style>
