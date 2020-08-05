@@ -33,6 +33,7 @@ h1 {
 .temperature {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .max {
   padding-top: 0px;
