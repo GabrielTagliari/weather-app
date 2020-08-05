@@ -38,6 +38,6 @@ h1 {
   padding-top: 0px;
 }
 .min {
-  padding-bottom: 0px;
+  padding-top: 15px;
 }
 </style>
