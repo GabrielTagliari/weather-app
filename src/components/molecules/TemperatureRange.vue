@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="temperature">
-      <h1>{{ maxTemperature }}</h1>
+      <h1>{{ maxTemperature }}°C</h1>
       <img class="max" alt="max" src="../../assets/arrow_up.svg" />
     </div>
     <div class="temperature">
-      <h1>{{ minTemperature }}</h1>
+      <h1>{{ minTemperature }}°C</h1>
       <img class="min" alt="min" src="../../assets/arrow_down.svg" />
     </div>
   </div>
@@ -29,11 +29,12 @@ img {
 h1 {
   margin-top: 10px;
   margin-bottom: 0px;
+  word-break: break-word;
 }
 .temperature {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .max {
   padding-top: 0px;

@@ -6,15 +6,13 @@ describe('TemperatureRange.vue', () => {
 
   beforeAll(() => {
     const mock = {
-      icon: 'barometer.svg',
-      label: '1,007mBar',
-      text: 'Pressure'
+      maxTemperature: '35',
+      minTemperature: '14'
     }
     wrapper = shallowMount(TemperatureRange, {
       propsData: {
-        icon: mock.icon,
-        label: mock.label,
-        text: mock.text
+        maxTemperature: mock.maxTemperature,
+        minTemperature: mock.minTemperature
       }
     })
   })
@@ -23,11 +21,15 @@ describe('TemperatureRange.vue', () => {
     expect(wrapper.vm).toBeTruthy()
   })
 
-  it('displays label', () => {
-    expect(wrapper.find("h3").text()).toBe("1,007mBar")
+  it("renders many children", () => {
+    expect(wrapper.findAll("h1").length).toBe(2)
   })
 
-  it('displays text', () => {
-    expect(wrapper.find("h6").text()).toBe("Pressure")
+  it('displays max temperature', () => {
+    expect(wrapper.findAll('h1').at(0).text()).toBe("35°C")
+  })
+
+  it('displays min temperature', () => {
+    expect(wrapper.findAll("h1").at(1).text()).toBe("14°C")
   })
 })
