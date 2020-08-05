@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import WeatherInformation from '@/components/atoms/WeatherInformation.vue'
+import WeatherInformation from '@/components/molecules/WeatherInformation.vue'
 
 describe('WeatherInformation.vue', () => {
   let wrapper

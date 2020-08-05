@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import WeatherInformation from '@/components/atoms/WeatherInformation'
+import WeatherInformation from '@/components/molecules/WeatherInformation'
 import TemperatureRange from '@/components/atoms/TemperatureRange'
 import CurrentTemperature from '@/components/atoms/CurrentTemperature'
 
