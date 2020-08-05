@@ -23,12 +23,15 @@ export default {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   width: 8em;
+  padding: 1em;
 }
 h3 {
   margin-bottom: 0;
+  word-break: break-word;
 }
 h6 {
-  margin-top: 5px;
+  margin: 5px 0 0 0;
 }
 </style>
