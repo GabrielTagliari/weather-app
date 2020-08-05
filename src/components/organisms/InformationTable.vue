@@ -2,7 +2,7 @@
   <div class="grid">
     <current-temperature temperature="36"/>
     <current-temperature temperature="36"/>
-    <temperature-range minTemperature="14°C" maxTemperature="35°C"/>
+    <temperature-range minTemperature="14" maxTemperature="35"/>
     <weather-information icon="humidity.svg" label="49%" text="Humidity"/>
     <weather-information icon="barometer.svg" label="1,007mBar" text="Pressure"/>
     <weather-information icon="wind-1.svg" label="23km/h" text="Wind"/>

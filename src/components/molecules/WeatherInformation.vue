@@ -24,7 +24,7 @@ export default {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 8em;
+  width: 6em;
   padding: 1em;
 }
 h3 {
