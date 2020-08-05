@@ -2,11 +2,11 @@
   <div>
     <div class="temperature">
       <h1>{{ maxTemperature }}</h1>
-      <img class="max" alt="max" src="../../assets/arrow_up.svg" width="50px" />
+      <img class="max" alt="max" src="../../assets/arrow_up.svg" />
     </div>
     <div class="temperature">
       <h1>{{ minTemperature }}</h1>
-      <img class="min" alt="min" src="../../assets/arrow_down.svg" width="50px" />
+      <img class="min" alt="min" src="../../assets/arrow_down.svg" />
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ h1 {
 .temperature {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .max {
   padding-top: 0px;
