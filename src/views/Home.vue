@@ -1,38 +1,19 @@
 <template>
   <div id="app">
     <information-table class="table"/>
-    <div class="daily-information">
-      <weather-daily-information
-        icon="sunny-1.svg"
-        label="Mon, 21"
-        maxTemperature="35"
-        minTemperature="14"
-      />
-      <weather-daily-information
-        icon="sunny-1.svg"
-        label="Tue, 22"
-        maxTemperature="32"
-        minTemperature="11"
-      />
-      <weather-daily-information
-        icon="hazy.svg"
-        label="Wed, 23"
-        maxTemperature="34"
-        minTemperature="29"
-      />
-    </div>
+    <week-list />
   </div>
 </template>
 
 <script>
 import InformationTable from "@/components/bosons/InformationTable";
-import WeatherDailyInformation from "@/components/molecules/WeatherDailyInformation";
+import WeekList from "@/components/bosons/WeekList";
 
 export default {
   name: "Home",
   components: {
     InformationTable,
-    WeatherDailyInformation,
+    WeekList,
   },
 };
 </script>
@@ -48,6 +29,7 @@ export default {
   font-family: "Barlow", sans-serif;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   margin: auto;
 }

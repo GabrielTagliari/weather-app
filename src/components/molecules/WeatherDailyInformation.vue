@@ -36,7 +36,7 @@ export default {
   border-radius: 15px;
   border: 1px solid transparent;
   box-shadow: 0px 0px 15px 5px #f2f5f4;
-  width: inherit;
+  width: 5em;
   padding: 1em;
   margin: 0.5em;
 }
@@ -55,7 +55,7 @@ export default {
 }
 
 .arrow {
-  height: 12px;
+  height: 0.7em;
   margin-left: .1em;
 }
 </style>
