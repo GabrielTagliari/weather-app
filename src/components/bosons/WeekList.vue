@@ -62,7 +62,7 @@ export default {
   overflow: auto;
   align-items: center;
   justify-content: flex-start;
-  width: 24em;
+  width: 20em;
   padding: 1em;
 }
 </style>

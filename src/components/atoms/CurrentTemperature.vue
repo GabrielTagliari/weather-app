@@ -20,7 +20,7 @@ export default {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 5rem;
+  width: inherit;
   padding: 1rem;
   font-size: 1em;
 }
