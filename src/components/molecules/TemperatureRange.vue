@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex">
     <div class="temperature">
       <h1>{{ maxTemperature }}°C</h1>
       <img class="max" alt="max" src="../../assets/arrow_up.svg" />
@@ -27,9 +27,18 @@ img {
   height: 20px;
 }
 h1 {
-  margin-top: 10px;
+  margin-top: 2px;
   margin-bottom: 0px;
   word-break: break-word;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 6em;
+  padding: 1em;
 }
 .temperature {
   display: flex;
