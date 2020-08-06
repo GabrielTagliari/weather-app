@@ -1,6 +1,6 @@
 <template>
   <div class="grid">
-    <current-temperature temperature="36"/>
+    <current-weather icon="sunny.svg" label="Sunny"/>
     <current-temperature temperature="36"/>
     <temperature-range minTemperature="14" maxTemperature="35"/>
     <weather-information icon="humidity.svg" label="49%" text="Humidity"/>
@@ -16,13 +16,15 @@
 import WeatherInformation from "@/components/molecules/WeatherInformation";
 import TemperatureRange from "@/components/molecules/TemperatureRange";
 import CurrentTemperature from "@/components/atoms/CurrentTemperature";
+import CurrentWeather from "@/components/molecules/CurrentWeather";
 
 export default {
   name: 'InformationTable',
   components: {
     WeatherInformation,
     TemperatureRange,
-    CurrentTemperature
+    CurrentTemperature,
+    CurrentWeather
   }
 }
 </script>
