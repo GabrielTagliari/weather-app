@@ -17,6 +17,11 @@ export default {
 <style scoped>
 .temperature{
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
+  width: 5rem;
+  padding: 1rem;
+  font-size: 1em;
 }
 </style>
