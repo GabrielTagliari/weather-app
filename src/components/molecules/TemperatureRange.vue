@@ -1,11 +1,11 @@
 <template>
   <div class="flex">
     <div class="temperature">
-      <h1>{{ maxTemperature }}°C</h1>
+      <h3>{{ maxTemperature }}°C</h3>
       <img class="max" alt="max" src="../../assets/arrow_up.svg" />
     </div>
     <div class="temperature">
-      <h1>{{ minTemperature }}°C</h1>
+      <h3>{{ minTemperature }}°C</h3>
       <img class="min" alt="min" src="../../assets/arrow_down.svg" />
     </div>
   </div>
@@ -23,10 +23,10 @@ export default {
 
 <style scoped>
 img {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 }
-h1 {
+h3 {
   margin-top: 2px;
   margin-bottom: 0px;
   word-break: break-word;
@@ -49,6 +49,6 @@ h1 {
   padding-top: 0px;
 }
 .min {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 </style>
