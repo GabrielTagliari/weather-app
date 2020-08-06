@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img src="../assets/banner-day.svg" alt="Cidade durante o dia" width="100%"/>
     <information-card />
   </div>
 </template>
@@ -38,5 +39,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
+  margin: 0;
 }
 </style>
