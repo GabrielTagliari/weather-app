@@ -37,8 +37,6 @@ h3 {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 6em;
-  padding: 1em;
 }
 .temperature {
   display: flex;

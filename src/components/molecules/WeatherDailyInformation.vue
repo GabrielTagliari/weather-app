@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" width="50px">
-    <h1 class="date">{{ label }}</h1>
+    <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" width="25px">
+    <h4 class="date">{{ label }}</h4>
     <div class="temperature">
       <div class="temperature__max">
         <span>{{ maxTemperature }}°C</span>
@@ -36,10 +36,9 @@ export default {
   border-radius: 15px;
   border: 1px solid transparent;
   box-shadow: 0px 0px 15px 5px #f2f5f4;
-  width: 8em;
+  width: inherit;
   padding: 1em;
-  margin: .5em;
-  
+  margin: 0.5em;
 }
 
 .date {
@@ -52,6 +51,7 @@ export default {
   display: flex;
   width: inherit;
   justify-content: space-evenly;
+  font-size: 0.7em;
 }
 
 .arrow {

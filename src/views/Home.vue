@@ -14,13 +14,19 @@
         maxTemperature="32"
         minTemperature="11"
       />
+      <weather-daily-information
+        icon="hazy.svg"
+        label="Wed, 23"
+        maxTemperature="34"
+        minTemperature="29"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import InformationTable from "@/components/bosons/InformationTable";
-import WeatherDailyInformation from "@/components/atoms/WeatherDailyInformation";
+import WeatherDailyInformation from "@/components/molecules/WeatherDailyInformation";
 
 export default {
   name: "Home",
@@ -53,5 +59,6 @@ export default {
 body {
   display: flex;
   justify-content: space-around;
+  align-content: space-around;
 }
 </style>

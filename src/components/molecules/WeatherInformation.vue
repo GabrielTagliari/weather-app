@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" max-width="25px">
-    <h3>{{ label }}</h3>
+    <h4>{{ label }}</h4>
     <h6>{{ text }}</h6>
   </div>
 </template>
@@ -24,10 +24,11 @@ export default {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 6em;
-  padding: 1em;
+  width: inherit;
+  padding: 0.6em;
+  margin: 0.5em;
 }
-h3 {
+h4 {
   margin-bottom: 0;
   word-break: break-word;
 }
