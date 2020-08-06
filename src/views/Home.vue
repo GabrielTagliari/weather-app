@@ -1,19 +1,16 @@
 <template>
   <div id="app">
-    <information-table class="table"/>
-    <week-list />
+    <information-card />
   </div>
 </template>
 
 <script>
-import InformationTable from "@/components/bosons/InformationTable";
-import WeekList from "@/components/bosons/WeekList";
+import InformationCard from '@/components/organisms/InformationCard'
 
 export default {
   name: "Home",
   components: {
-    InformationTable,
-    WeekList,
+    InformationCard
   },
 };
 </script>
