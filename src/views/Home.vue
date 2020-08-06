@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import InformationTable from "@/components/organisms/InformationTable";
+import InformationTable from "@/components/bosons/InformationTable";
 import WeatherDailyInformation from "@/components/atoms/WeatherDailyInformation";
 
 export default {
@@ -39,18 +39,19 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
   font-family: "Barlow", sans-serif;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  margin: auto;
 }
 
 .daily-information {
   display: flex;
 }
 
-.table {
-  padding: 1em;
+body {
+  display: flex;
+  justify-content: space-around;
 }
 </style>
