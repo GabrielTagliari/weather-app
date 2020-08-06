@@ -24,7 +24,7 @@ describe('WeatherInformation.vue', () => {
   })
 
   it('displays label', () => {
-    expect(wrapper.find("h3").text()).toBe("1,007mBar")
+    expect(wrapper.find("h4").text()).toBe("1,007mBar")
   })
 
   it('displays text', () => {

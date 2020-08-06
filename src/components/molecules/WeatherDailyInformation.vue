@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" width="25px">
-    <h4 class="date">{{ label }}</h4>
+    <h4 class="date" data-test-day-label>{{ label }}</h4>
     <div class="temperature">
       <div class="temperature__max">
-        <span>{{ maxTemperature }}°C</span>
+        <span data-test-max-temperature>{{ maxTemperature }}°C</span>
         <img alt="maior temperatura" class="arrow" :src="require('../../assets/arrow_up.svg')">
       </div>
       <div class="temperature__min">
-        <span>{{ minTemperature }}°C</span>
+        <span data-test-min-temperature>{{ minTemperature }}°C</span>
         <img alt="menor temperatura" class="arrow" :src="require('../../assets/arrow_down.svg')">
       </div>
     </div>

@@ -22,14 +22,14 @@ describe('TemperatureRange.vue', () => {
   })
 
   it("renders many children", () => {
-    expect(wrapper.findAll("h1").length).toBe(2)
+    expect(wrapper.findAll("h3").length).toBe(2)
   })
 
   it('displays max temperature', () => {
-    expect(wrapper.findAll('h1').at(0).text()).toBe("35°C")
+    expect(wrapper.findAll('h3').at(0).text()).toBe("35°C")
   })
 
   it('displays min temperature', () => {
-    expect(wrapper.findAll("h1").at(1).text()).toBe("14°C")
+    expect(wrapper.findAll("h3").at(1).text()).toBe("14°C")
   })
 })
