@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" max-width="25px">
+    <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)">
     <h4>{{ label }}</h4>
     <h6>{{ text }}</h6>
   </div>
@@ -28,6 +28,9 @@ export default {
   padding: 0.6em;
   margin: 0.5em;
 }
+.icon {
+  width: 25px;
+}
 h4 {
   margin-bottom: 0;
   word-break: break-word;
@@ -35,4 +38,5 @@ h4 {
 h6 {
   margin: 5px 0 0 0;
 }
+
 </style>
