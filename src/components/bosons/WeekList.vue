@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import WeatherDailyInformation from "@/components/molecules/WeatherDailyInformation";
+import WeatherDailyInformation from "@/components/molecules/WeatherDailyInformation"
 
 export default {
   name: "WeekList",

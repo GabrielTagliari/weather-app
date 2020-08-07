@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import WeatherInformation from "@/components/molecules/WeatherInformation";
-import TemperatureRange from "@/components/molecules/TemperatureRange";
-import CurrentTemperature from "@/components/atoms/CurrentTemperature";
-import CurrentWeather from "@/components/molecules/CurrentWeather";
+import WeatherInformation from "@/components/molecules/WeatherInformation"
+import TemperatureRange from "@/components/molecules/TemperatureRange"
+import CurrentTemperature from "@/components/atoms/CurrentTemperature"
+import CurrentWeather from "@/components/molecules/CurrentWeather"
 
 export default {
   name: 'InformationTable',

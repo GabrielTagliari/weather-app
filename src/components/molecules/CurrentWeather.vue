@@ -1,7 +1,7 @@
 <template>
   <div class="weather">
     <img class="icon" alt="Ícone" :src="require('../../assets/' + icon)" width="35px">
-    <h1 class="date">{{ label }}</h1>
+    <h1 class="date" data-test-current-weather-label>{{ label }}</h1>
   </div>
 </template>
 
@@ -11,8 +11,6 @@ export default {
   props: {
     icon: String,
     label: String,
-    maxTemperature: String,
-    minTemperature: String
   }
 }
 </script>
