@@ -1,0 +1,4 @@
+{
+  "pluginsFile": "tests/component/cypress/plugins/index.js",
+  "testFiles": "**/*.{feature,features}"
+}
