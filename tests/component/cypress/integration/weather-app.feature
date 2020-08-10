@@ -1,8 +1,10 @@
 #language: pt
 #encoding: UTF-8
-Funcionalidade: Acessar o aplicativo weather-app
+Funcionalidade: Verificar os dados do tempo utilizando o aplicativo weather-app
 
-  Cenário: Xambrela
+  Cenário: Acessar o aplicativo em algum dia específico
     Dado que hoje é quarta-feira
+    E estou em São Paulo
     Quando acesso o aplicativo
-    Então encontro os dados do tempo rerente ao dia
+    Então encontro os dados do tempo referente ao dia 
+    E referente ao local
